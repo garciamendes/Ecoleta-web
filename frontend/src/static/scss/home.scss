@@ -38,7 +38,7 @@
         align-items: center;
         overflow: hidden;
 
-        transition: .25s;
+        transition: 0.25s;
 
         margin-top: 10%;
 
@@ -57,11 +57,11 @@
         strong {
           flex: 1;
           text-align: center;
-          color: #FFF;
+          color: #fff;
         }
 
         &:hover {
-          background: #2FB86E;
+          background: #2fb86e;
         }
       }
     }

@@ -3,7 +3,7 @@ import React from "react";
 
 // Third party
 import { FiLogIn } from "react-icons/fi";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 // Component
 import Header from "../../components/Header";
@@ -11,24 +11,22 @@ import Header from "../../components/Header";
 // Local
 import "../../static/scss/home.scss";
 
-
-function HomeScreen()  {
-
+function HomeScreen() {
   return (
     <div className="container-home">
       <Header />
 
       <div className="content-create-collection">
         <div>
-          <h1 className='title'>
+          <h1 className="title">
             Seu marketplace <br /> de coleta de resíduos.
           </h1>
-          <p className='descrition'>
+          <p className="descrition">
             Ajudamos pessoas a encontrarem pontos <br /> de coleta de forma
             eficiente.
           </p>
 
-          <Link to='/create-point'>
+          <Link to="/create-point">
             <span>
               <FiLogIn size={30} color="#fff" />
             </span>
@@ -39,6 +37,6 @@ function HomeScreen()  {
       </div>
     </div>
   );
-};
+}
 
-export default HomeScreen
+export default HomeScreen;

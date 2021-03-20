@@ -6,7 +6,7 @@ import React, { ChangeEvent, FormEvent, useEffect, useState } from "react";
 import { MapContainer, TileLayer, MapConsumer, Marker } from "react-leaflet";
 import { LeafletMouseEvent } from "leaflet";
 import axios from "axios";
-import { useHistory } from 'react-router-dom'
+import { useHistory } from "react-router-dom";
 
 // Component
 import Header from "../../components/Header";
@@ -32,7 +32,7 @@ interface IBGECityProps {
 }
 
 const CreatePoint: React.FC = () => {
-  const history = useHistory()
+  const history = useHistory();
 
   const [formData, setFormData] = useState({
     name: "",
@@ -147,14 +147,16 @@ const CreatePoint: React.FC = () => {
       items,
     };
 
-    await api.post('/points', data).then(() => {
-      alert('deu certo')
+    await api
+      .post("/points", data)
+      .then(() => {
+        alert("deu certo");
 
-      history.push('/')
-    }).catch(() => {
-      alert('deu erro ai')
-    })
-    
+        history.push("/");
+      })
+      .catch(() => {
+        alert("deu erro ai");
+      });
   }
 
   return (
